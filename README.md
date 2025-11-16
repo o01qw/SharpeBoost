@@ -24,7 +24,7 @@ This yields models that trade less, avoid bad regimes, and often achieve higher 
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/sharpeboost.git
+git clone https://github.com/o01qw/sharpeboost.git
 cd sharpeboost
 pip install -e .
 ```
