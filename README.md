@@ -126,15 +126,10 @@ sharpeboost/
 └── pyproject.toml
 ```
 
-## License
-
-SharpeBoost is released under the Apache License 2.0.
-
 ## Contributing
 
 Pull requests, issues, and feature suggestions are welcome.
 
 ## Contact
 
-**Ivan Levchenko** — UNSW Sydney  
-Please open a GitHub issue for questions.
+**Ivan Levchenko** — ivan.levch@outlook.com
