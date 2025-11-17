@@ -79,6 +79,9 @@ Example (AAPL–TSLA universe, 2020–2021):
 | SharpeBoost | **2.31** | **0.29** |
 | RMSE XGBoost | 0.87 | 0.64 |
 
+![SharpeBoost](assets/sharpe_comparison_bars.png)
+![Sharpeboost](assets/turnover_comparison_bars.png)
+
 ## API Reference
 
 ### `SharpeBoostRegressor`
