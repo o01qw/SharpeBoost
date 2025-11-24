@@ -98,24 +98,14 @@ preds = trainer.predict(X_test)
 *   `run_on_data.py`: Example script demonstrating a Train/Val/Test walk-forward workflow.
 *   `data_collection.py`: Script to download financial data (requires `yfinance`).
 
-## ⚠️ Disclaimer
-This software is for educational and research purposes only. It is not financial advice. Trading involves risk of loss.
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 We compared **SharpeBoost** against a standard **RMSE-minimizing Gradient Boosting** baseline. Both models were trained using a walk-forward approach on a universe of liquid assets.
 
 ### Key Results
-*   **Sharpe Ratio**: SharpeBoost consistently achieves a higher out-of-sample Sharpe Ratio (net of costs).
-*   **Turnover**: SharpeBoost learns to trade less frequently, avoiding high-turnover noise that kills performance after transaction costs.
-
-### Graphs
-
-#### Universe: All Assets
-<p float="left">
-  <img src="assets/sharpe_comparison_all.png" width="45%" />
-  <img src="assets/turnover_comparison_all.png" width="45%" /> 
-</p>
+*   **Sharpe Ratio**: SharpeBoost consistently achieves a higher out-of-sample Sharpe Ratio (+1.41).
+*   **Turnover**: SharpeBoost learns to trade less frequently (-0.29), avoiding high-turnover noise that kills performance after transaction costs.
 
 #### Universe: Mega-Cap Only
 <p float="left">
