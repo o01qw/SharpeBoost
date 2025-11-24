@@ -109,12 +109,6 @@ We compared **SharpeBoost** against a standard **RMSE-minimizing Gradient Boosti
 
 ### Graphs
 
-#### Universe: All Assets
-<p float="left">
-  <img src="assets/sharpe_comparison_all.png" width="45%" />
-  <img src="assets/turnover_comparison_all.png" width="45%" /> 
-</p>
-
 #### Universe: Mega-Cap Only
 <p float="left">
   <img src="assets/sharpe_comparison_mega_only.png" width="45%" />
