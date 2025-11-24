@@ -107,8 +107,6 @@ We compared **SharpeBoost** against a standard **RMSE-minimizing Gradient Boosti
 *   **Sharpe Ratio**: SharpeBoost consistently achieves a higher out-of-sample Sharpe Ratio (+1.41).
 *   **Turnover**: SharpeBoost learns to trade less frequently (-0.29), avoiding high-turnover noise that kills performance after transaction costs.
 
-### Graphs
-
 #### Universe: Mega-Cap Only
 <p float="left">
   <img src="assets/sharpe_comparison_mega_only.png" width="45%" />
