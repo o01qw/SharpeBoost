@@ -1,8 +1,8 @@
 # SharpeBoost
 
-**SharpeBoost** is a custom Gradient Boosting algorithm designed specifically for financial time-series forecasting. Unlike standard boosting libraries (XGBoost, LightGBM) that minimize generic loss functions like MSE or LogLoss, SharpeBoost directly optimizes the **Sharpe Ratio** of the resulting trading strategy, accounting for transaction costs.
+**SharpeBoost** is a custom Gradient Boosting algorithm designed specifically for financial time-series forecasting. Unlike standard boosting libraries (XGBoost, LightGBM) that minimize generic loss functions like MSE or LogLoss, SharpeBoost directly optimizes the **Sharpe Ratio** of the resulting trading strategy, accounting for transaction costs. (Greedy heuristic)
 
-## 🚀 Key Features
+## Key Features
 
 *   **Direct Sharpe Optimization**: Trees are accepted into the ensemble only if they improve the portfolio's Sharpe Ratio.
 *   **Transaction Cost Awareness**: The optimization loop calculates returns *net of transaction costs* (e.g., 5 bps per trade), preventing the model from learning high-turnover noise.
@@ -10,7 +10,7 @@
 *   **Pruning**: Periodically re-evaluates existing trees and removes those that no longer contribute to the Sharpe Ratio (or hurt it).
 *   **Robust Metrics**: Uses Exponential Moving Average (EMA) or Heteroskedasticity and Autocorrelation Consistent (HAC) estimators for stable Sharpe calculations.
 
-## 🧠 How It Works
+## How It Works
 
 SharpeBoost follows the structure of a Gradient Boosting Machine (GBM) but changes the **acceptance criteria** for new learners.
 
@@ -21,7 +21,7 @@ SharpeBoost follows the structure of a Gradient Boosting Machine (GBM) but chang
     *   Otherwise, the tree is **REJECTED** and discarded.
 4.  **Prune**: Every $N$ rounds, the algorithm checks all accepted trees. If removing a tree *improves* (or doesn't hurt) the Sharpe Ratio, it is dropped.
 
-## 📐 The Mathematics
+## Maths
 
 ### 1. The Objective
 We aim to maximize the Sharpe Ratio $S$ of the portfolio returns $r_t$:
@@ -47,7 +47,7 @@ $$ S(F_m) - S(F_{m-1}) > \tau $$
 
 This greedy approach ensures that every added complexity (new tree) pays for itself in risk-adjusted performance.
 
-## 🛠️ Installation
+## Installation
 
 Clone the repository and install the dependencies:
 
@@ -57,7 +57,7 @@ cd SharpeBoost
 pip install numpy pandas scikit-learn pyarrow
 ```
 
-## 💻 Usage
+## Usage
 
 ### Quick Start
 Run the example script to train on the included dataset (or your own):
@@ -90,7 +90,7 @@ trainer.fit_one_split(X_tr, y_tr, X_val, y_val, returns_val=ret_val)
 preds = trainer.predict(X_test)
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 *   `trainer.py`: Core `SharpePruneTrainer` class implementing the boosting loop.
 *   `metrics.py`: Robust Sharpe Ratio calculations (EMA, HAC).
