@@ -106,8 +106,8 @@ This software is for educational and research purposes only. It is not financial
 We compared **SharpeBoost** against a standard **RMSE-minimizing Gradient Boosting** baseline. Both models were trained using a walk-forward approach on a universe of liquid assets.
 
 ### Key Results
-*   **Sharpe Ratio**: SharpeBoost consistently achieves a higher out-of-sample Sharpe Ratio (net of costs).
-*   **Turnover**: SharpeBoost learns to trade less frequently, avoiding high-turnover noise that kills performance after transaction costs.
+*   **Sharpe Ratio**: SharpeBoost consistently achieves a higher out-of-sample Sharpe Ratio (+1.41).
+*   **Turnover**: SharpeBoost learns to trade less frequently (-0.29), avoiding high-turnover noise that kills performance after transaction costs.
 
 ### Graphs
 
