@@ -98,10 +98,8 @@ preds = trainer.predict(X_test)
 *   `run_on_data.py`: Example script demonstrating a Train/Val/Test walk-forward workflow.
 *   `data_collection.py`: Script to download financial data (requires `yfinance`).
 
-## ⚠️ Disclaimer
-This software is for educational and research purposes only. It is not financial advice. Trading involves risk of loss.
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 We compared **SharpeBoost** against a standard **RMSE-minimizing Gradient Boosting** baseline. Both models were trained using a walk-forward approach on a universe of liquid assets.
 
