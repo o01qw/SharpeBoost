@@ -1,6 +1,6 @@
 # SharpeBoost
 
-**SharpeBoost** is a custom Gradient Boosting algorithm designed specifically for financial time-series forecasting. Unlike standard boosting libraries (XGBoost, LightGBM) that minimize generic loss functions like MSE or LogLoss, SharpeBoost directly optimizes the **Sharpe Ratio** of the resulting trading strategy, accounting for transaction costs. (Greedy heuristic)
+**SharpeBoost** is a custom Gradient Boosting algorithm designed specifically for financial time-series forecasting. Unlike standard boosting libraries (XGBoost, LightGBM) that minimize generic loss functions like MSE or LogLoss, SharpeBoost directly optimizes the **Sharpe Ratio** of the resulting trading strategy, accounting for transaction costs.
 
 ## Key Features
 
